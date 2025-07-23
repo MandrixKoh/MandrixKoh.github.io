@@ -1,0 +1,314 @@
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: 	#cb997e;
+    height: 7vh;
+    margin-bottom: 2vh;
+}
+
+body {
+    background-color: 	#cb997e;
+        font-family: Garden;
+}
+
+@font-face {
+    font-family: Garden;
+    src: url(/fonts/ComicNeue-Angular_Bold.otf);
+}
+
+button {
+    width: 20vw;
+    height: 6vh;
+    border-radius: 0.7em;
+    background-color: #b7b7a4;
+    font-family: Garden;
+}
+
+#MobileMenu {
+    display: none;
+}
+
+/*Home page*/
+
+.Home{
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ),  url(/images/GardenBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5em;
+    font-size: 2vw;
+}
+
+.Home.closed {
+    display: none;
+}
+
+/*Types of Garden page*/
+.TypesOfGarden {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.TypesOfGarden button {
+    width: 2vw;
+    height: inherit;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.TypesOfGarden h1 {
+    text-align:center;
+    font-size: 5vh;
+    margin-bottom: 5vh;
+    width: 100vw;
+}
+
+.TypesOfGarden.closed {
+    display: none;
+}
+
+button:hover {
+    background-color: #a5a58d;
+}
+
+button {
+    transition: background-color 0.5s ease;
+}
+
+
+/* #GardenPages */
+/*Flower Garden*/
+.Flower {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    background-color: #a5a58d;
+    border-radius: 1em;
+    padding: 1vw;
+}
+
+.Flower img {
+    width: 37vw;
+    border-radius: 0.5em;
+}
+
+.FlowerText {
+    width: 50vw;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.FlowerText h2 {
+    font-size: 3vw;
+    padding: 0%;
+    margin: 0%;
+}
+
+.FlowerText p {
+    font-size: 1.5vw;
+}
+
+.Flower.closed{
+    display: none;
+}
+
+/*Vegetable garden*/
+.Vegetable {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    background-color: #a5a58d;
+    border-radius: 1em;
+    padding: 1vw;
+}
+
+.Vegetable img {
+    width: 37vw;
+    border-radius: 0.5em;
+}
+
+.VegetableText {
+    width: 50vw;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.VegetableText h2 {
+    font-size: 3vw;
+    padding: 0%;
+    margin: 0%;
+}
+
+.VegetableText p {
+    font-size: 1.5vw;
+}
+
+.Vegetable.closed{
+    display: none;
+}
+
+/*Container garden*/
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    background-color: #a5a58d;
+    border-radius: 1em;
+    padding: 1vw;
+}
+
+.Container img {
+    width: 37vw;
+    border-radius: 0.5em;
+}
+
+.ContainerText {
+    width: 50vw;
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ContainerText h2 {
+    font-size: 3vw;
+    padding: 0%;
+    margin: 0%;
+}
+
+.ContainerText p {
+    font-size: 1.5vw;
+}
+
+.Container.closed{
+    display: none;
+}
+/* #endregion */
+
+
+
+/*Types of Soil page*/
+.TypesOfSoil {
+    display: flex;
+}
+.TypesOfSoil.closed {
+    display: none;
+}
+
+/*Common Pest page*/
+.CommonPest {
+    display: flex;
+}
+
+.CommonPest.closed {
+    display: none;
+}
+
+
+.Home h1{
+    font-family: Garden;
+    color: #a5a58d;
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.97); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 426px) {
+    nav button {
+        flex-direction: column;
+        display: none;
+        background-color: #a5a58d;
+        width: 100%;
+    }
+    
+    #MobileMenu {
+        display:flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    nav button.show {
+        display: flex;
+    }
+    
+    nav {
+        flex-direction: column;
+    }
+
+    nav.opened {
+        height: 40vh;
+    }
+
+    button {
+        width: 90vw;
+        height: 6vh;
+        margin: 5px;
+        justify-content: center;
+    }
+
+    .Home {
+        font-size: 5vw;
+    }
+
+    /*Garden pages mobile*/
+    .TypesOfGarden {
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .TypesOfGarden article {
+        height: 70vh;
+        width: 80vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .TypesOfGarden img {
+        margin-top: 1em;
+        width: 70vw;
+    }
+
+    .TypesOfGarden h2 {
+        font-size: 5.5vw;
+    }
+
+    .TypesOfGarden p {
+        font-size: 2.5vw;
+    }
+
+    .TypesOfGarden button {
+        width: 5.5vw;
+    }
+
+    .TypesOfGarden h1 {
+        margin: 1vh;
+    }
+
+    .TypesOfGarden div {
+        height: 40vh;
+    }
+}
