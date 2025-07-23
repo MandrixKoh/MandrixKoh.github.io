@@ -5,11 +5,13 @@ nav {
     background-color: 	#cb997e;
     height: 7vh;
     margin-bottom: 2vh;
+    position: sticky;
+    top: 1vh;
 }
 
 body {
     background-color: 	#cb997e;
-        font-family: Garden;
+    font-family: Garden;
 }
 
 @font-face {
@@ -67,6 +69,14 @@ button {
     font-size: 5vh;
     margin-bottom: 5vh;
     width: 100vw;
+}
+
+.soil7 {
+    background-color: #b7b7a4;
+}
+
+.soil7.nice {
+    background-color: #ff0000;
 }
 
 .TypesOfGarden.closed {
@@ -204,11 +214,66 @@ button {
 
 
 /*Types of Soil page*/
-.TypesOfSoil {
-    display: flex;
-}
 .TypesOfSoil.closed {
     display: none;
+}
+
+.TypesOfSoil h1 {
+    text-align: center;
+}
+
+.soil-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vh;
+  justify-content: space-evenly;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 25vw;
+  height: 40vh;
+  cursor: pointer;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+
+}
+
+.flip-card.flipped .flip-card-inner {
+
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back ,.soil-grid img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 0%;
+}
+
+
+.flip-card-front {
+  background-color: #b7b7a4;
+}
+
+.flip-card-back {
+  background-color: #a5a58d;
+  transform: rotateY(180deg);
 }
 
 /*Common Pest page*/

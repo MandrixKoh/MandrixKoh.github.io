@@ -35,9 +35,10 @@ hamburger.addEventListener("click", () => {
 
 /*Spawn all the website as closed except home page*/
 HomePg.classList.add("closed");
-GardenPg.classList.remove("closed");
+GardenPg.classList.add("closed");
 PestPg.classList.add("closed");
 SoilPg.classList.add("closed");
+SoilPg.classList.remove("closed");
 
 HomeBtn.addEventListener("click", () => {
     HomePg.classList.remove("closed");
@@ -124,4 +125,14 @@ leftarrow.addEventListener("click", () => {
     }
     GardenPageUpdate(PageNo);
 })
+
+//Soil pg flip cards
+const soilGrid = document.querySelector('.soil-grid');
+
+soilGrid.addEventListener('click', (event) => {
+  const card = event.target.closest('.flip-card');
+  if (card && soilGrid.contains(card)) {
+    card.classList.toggle('flipped');
+  }
+});
 
