@@ -120,11 +120,11 @@ soilGrid.addEventListener('click', function (event) {
 // Pest quiz
 const correctAnswers = ["worm", "butterfly", "ant", "snail", "caterpillar"];
 const newImages = [
-    "images/Worm.jpg",
-    "images/Butterfly.jpg",
-    "images/Ant.jpg",
-    "images/Snail.jpg",
-    "images/Cater.jpg"
+    "images/worm.jpg",
+    "images/butterfly.jpg",
+    "images/ant.jpg",
+    "images/snail.jpg",
+    "images/cater.jpg"
 ];
 
 const quizRows = document.querySelectorAll(".QuizContainer form div");
@@ -223,7 +223,7 @@ function AppleCatch() {
     score += 1;
     scoreBox.innerHTML = "Score: " + score;
 
-    const AppleSound = new Audio("/audio/splat.mp3");
+    const AppleSound = new Audio("audio/splat.mp3");
     AppleSound.play();
 
     if (!gameStarted) {
