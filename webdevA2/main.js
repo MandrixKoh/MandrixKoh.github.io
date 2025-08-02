@@ -231,7 +231,7 @@ function AppleCatch() {
         gameStarted = true;
     }
 
-    apple.src = "/images/GoodApple.jpg";
+    apple.src = "images/GoodApple.jpg";
     setTimeout(ChangeSprite, 500);
 }
 
@@ -244,7 +244,7 @@ function WormCatch() {
     score -= 1;
     scoreBox.innerHTML = "Score: " + score;
 
-    const WormSound = new Audio("/audio/angry.mp3");
+    const WormSound = new Audio("audio/angry.mp3");
     WormSound.play();
 
     if (!gameStarted) {
@@ -252,7 +252,7 @@ function WormCatch() {
         gameStarted = true;
     }
 
-    worm.src = "/images/EvilWorm.jpg";
+    worm.src = "images/EvilWorm.jpg";
     setTimeout(ChangeSprite2, 500);
 }
 
@@ -262,11 +262,11 @@ worm.addEventListener("click", WormCatch);
 
 
 function ChangeSprite() {
-    apple.src = "/images/Apple.jpg";
+    apple.src = "images/Apple.jpg";
 }
 
 function ChangeSprite2() {
-    worm.src = "/images/RottenApple.jpg";
+    worm.src = "images/RottenApple.jpg";
 }
 
 function Timechange() {
@@ -284,8 +284,8 @@ function RestartGame() {
 
     scoreBox.innerHTML = "Score: 0";
     Timer.innerHTML = "Time: 30s";
-    apple.src = "/images/Apple.jpg";
-    worm.src = "/images/RottenApple.jpg";
+    apple.src = "images/Apple.jpg";
+    worm.src = "images/RottenApple.jpg";
 
     clearInterval(countdownInterval);
     clearInterval(moveAppleItvId);
