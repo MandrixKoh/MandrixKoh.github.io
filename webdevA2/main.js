@@ -120,11 +120,11 @@ soilGrid.addEventListener('click', function (event) {
 // Pest quiz
 const correctAnswers = ["worm", "butterfly", "ant", "snail", "caterpillar"];
 const newImages = [
-    "/images/Worm.jpg",
-    "/images/Butterfly.jpg",
-    "/images/Ant.jpg",
-    "/images/Snail.jpg",
-    "/images/Cater.jpg"
+    "images/Worm.jpg",
+    "images/Butterfly.jpg",
+    "images/Ant.jpg",
+    "images/Snail.jpg",
+    "images/Cater.jpg"
 ];
 
 const quizRows = document.querySelectorAll(".QuizContainer form div");
