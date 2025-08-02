@@ -1,0 +1,21 @@
+{
+  "name": "Umamusume",
+  "short_name": "Umamusume",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#4CAF50",
+  "theme_color": "#4CAF50",
+  "description": "Bakushinning",
+  "icons": [
+    {
+      "src": "/images/GoodApple.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/images/GoodApple.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ]
+}

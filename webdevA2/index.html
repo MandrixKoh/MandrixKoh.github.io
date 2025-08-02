@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="/manifest.json">
+    <title>Gardening Thing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <button id="MobileMenu">Menu</button>
+        <button id="HomeBtn">Home</button>
+        <button id="GardenBtn">Types of Gardens</button>
+        <button id="SoilBtn">Types of Soil</button>
+        <button id="PestBtn">Common pests</button>
+    </nav>
+
+    <section class="Home">
+        <h1>Gardening 101</h1>
+    </section>
+
+    <section class="TypesOfGarden">
+        <h1>Types of Gardens</h1>
+        <button id="Left">&larr;</button>
+        <article class="Flower">
+            <img src="/images/Flower.jpg" alt="FlowerGarden">
+            <div class="FlowerText">
+                <h2>Flower Garden</h2>
+                <p>A flower garden is a vibrant oasis of color, fragrance, and life, where blooms like roses, tulips,
+                    and daisies create a stunning display.<br>
+                    Whether in backyard beds, containers, or wildflower meadows, flowers attract pollinators, uplift
+                    moods,<br>
+                    and transform outdoor spaces into natural works of art. With the right care—sunlight, water, and
+                    soil—anyone can cultivate a thriving floral paradise.</p>
+            </div>
+        </article>
+
+        <article class="Vegetable">
+            <img src="/images/Vegetable.jpeg" alt="VegetableGarden">
+            <div class="VegetableText">
+                <h2>Vegetable Garden</h2>
+                <p>Vegetable gardening turns your backyard, balcony, or even a sunny windowsill into a source of fresh,
+                    homegrown food.<br>
+                    From crisp lettuce and juicy tomatoes to spicy peppers and sweet carrots, growing your own veggies
+                    saves money,<br>
+                    boosts health, and connects you to nature. With good soil, sunlight, and a little patience,<br>
+                    anyone can harvest the rewards of their own edible garden—one delicious bite at a time.</p>
+            </div>
+        </article>
+
+        <article class="Container">
+            <img src="/images/Container.jpg" alt="ContainerGarden">
+            <div class="ContainerText">
+                <h2>Container Garden</h2>
+                <p>Container gardening brings fresh herbs, flowers, and veggies to life—no yard needed! Perfect for
+                    patios, balconies, or windowsills,<br>
+                    pots and planters let you grow anything from basil and cherry tomatoes to vibrant petunias with just
+                    soil, sunlight, and water.<br>
+                    Compact, versatile, and beginner-friendly, it's gardening made simple for any space.</p>
+            </div>
+        </article>
+
+        <button id="Right">&rarr;</button>
+    </section>
+
+    <section class="TypesOfSoil">
+        <h1>Types Of Soil</h1>
+        <div class="soil-grid">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/Clay-soil1.jpg" alt="Soil1">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Heavy, sticky, and dense, clay soil holds moisture and nutrients well but drains poorly and
+                            can suffocate plant roots.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/SandSoil.jpg" alt="Soil2">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Loose, gritty, and fast-draining, sandy soil warms up quickly in spring but struggles to
+                            retain water and nutrients.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/SiltySoil.jpg" alt="Soil3">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Soft, smooth, and fertile, silt soil retains moisture better than sand but can compact easily
+                            and erode.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/PeatySoil.jpg" alt="Soil4">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Spongy, acidic, and rich in organic matter, peat soil retains water but needs lime and
+                            compost to reduce acidity for most plants.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/chalkysoil.jpg" alt="Soil5">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Alkaline, stony, and free-draining, chalky soil is poor in nutrients and unsuitable for
+                            acid-loving plants like blueberries.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/LoamSoil.jpg" alt="Soil6">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>The ideal garden soil, loam is a balanced mix of sand, silt, and clay, offering good
+                            drainage, fertility, and structure.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="CommonPest">
+        <h1>Types of pests</h1>
+        <div class="QuizContainer">
+            <form>
+                <div>
+                    <img src="/images/WormSilhouette.jpg" alt="WormSilhouette">
+                    <input type="text" placeholder="A slim thing">
+                </div>
+                <div>
+                    <img src="/images/ButterflySilhouette.jpg" alt="ButterflySilhouette">
+                    <input type="text" placeholder="Beautiful and can fly">
+                </div>
+                <div>
+                    <img src="/images/AntSilhouette.jpg" alt="AntSilhouette">
+                    <input type="text" placeholder="Small and can carry more than their bodyweight">
+                </div>
+                <div>
+                    <img src="/images/SnailSilhouette.jpg" alt="SnailSilhouette">
+                    <input type="text" placeholder="Hides in their shell">
+                </div>
+                <div>
+                    <img src="/images/CaterSilhouette.jpg" alt="CaterSilhouette">
+                    <input type="text" placeholder="Eat leaves n is fat">
+                </div>
+            </form>
+        </div>
+
+        <div class="GameArea">
+            <h1>Garden Game</h1>
+            <div class="PlayArea">
+                <h2 id="scoreBox">Score:</h2>
+                <h2 id="Timer">Time:</h2>
+                <img src="/images/Apple.jpg" alt="Evil" id="apple">
+                <img src="/images/RottenApple.jpg" alt="Evil" id="Worm">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="/images/QRCode.png" alt="QRCode">
+        <p>@ 2025 Mandrix Koh. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
